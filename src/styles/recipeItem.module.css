@@ -1,0 +1,123 @@
+
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  margin-top: 2rem;
+}
+.recipeImage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: calc(50% - 1rem);
+}
+.recipeImage button {
+  margin-bottom: 2rem;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+  height: 3.5rem;
+  border-radius: 4px;
+  text-transform: capitalize;
+  font-weight: 700;
+  transition-property: color, background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  border: 1px solid #FFC107;
+  background-color: #FFC107;
+}
+.recipeImage button:hover{
+    cursor: pointer;
+    color: #FFC107;
+    background-color: #fff;
+}
+.recipeImage img{
+    border-radius: 5px;
+    width: 100%;
+}
+.recipeDetails{
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 1rem);
+    text-transform: capitalize;
+    padding: 0 2rem;
+}
+.recipeDetails h2 {
+    color: #123;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.recipeDetails h3{
+    color: #FFC107;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+.actions{
+    display: flex;
+    margin-bottom: 1rem;
+}
+.publisher,.url{
+    color: #fff;
+    font-size: 1.4rem;
+    padding: .5rem 1rem;
+    height: 3.5rem;
+    border-radius: 4px;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition-property: color,background-color;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.publisher{
+    background-color: #007BFF;
+    border-color: #007BFF;
+    margin-right: 1rem;
+}
+.publisher:hover{
+    color: #007BFF;
+    background-color: #fff;
+}
+.url{
+    background-color: #28A745;
+    border-color: #28A745;
+}
+.url:hover{
+    color: #28A745;
+    background-color: #fff;
+}
+.ingredientsContainer h2{
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+.ingredients li{
+    font-size: 1.6rem;
+    font-family: "Courgette", cursive;
+    margin-bottom: .5rem;
+    border: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+@media (max-width:50em){
+    .container{
+        flex-direction: column;
+    }
+    .recipeImage,.recipeDetails{
+        width: 100%;
+    }
+    .recipeImage{
+        margin-bottom: 2rem;
+    }
+    .recipeImage img{
+        align-self: center;
+    }
+}

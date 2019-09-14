@@ -1,0 +1,32 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+@media (max-width: 50rem){
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 37.5rem){
+    .container{
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+}
+.mainTitle,
+.err{
+    font-family:'Courgette', cursive;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.err{
+    color: #DC3545;
+}
